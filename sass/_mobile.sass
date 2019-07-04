@@ -1,0 +1,85 @@
+@media (max-width: 768px)
+    .header-main
+     nav
+        .nav-overlay.opened-overlay
+            width: 100%
+            transition: all 0.2s ease-in          
+        .nav-items
+            display: none
+            &.active-menu
+                display: inline-block
+                z-index: 101
+                position: absolute
+                top: 15%
+                left: 40%
+                text-align: center
+                a
+                    color: $white_color
+                    display: block
+                    padding: 1rem
+    .header
+        .header-title
+            h2
+                font-size: $mobile_header_title_size
+    section.about-section        
+        .about-points            
+            .about-point                
+                img
+                    width: 300px
+                    height: 200px   
+    section.recent-work
+        .recent-categoryes
+            ul
+                .recent-category-item
+                    &:hover 
+                .current-item                
+        .work-items
+            .work-item
+                text-align: center
+                .item-img-wrapper
+                    .item-img
+                        width: 300px
+                        height: 200px
+
+    section.subscribe
+        text-align: center
+        .subscription-form
+            .sbm-block                
+            input[type="text"],input[type="email"]
+            input[type="submit"]
+                margin-top: 1rem  
+    .pager-block
+        .pager
+            text-align: center            
+
+    section.recent-posts
+        text-align: center
+        .posts-block            
+            .post-item
+                text-align: center
+                .post-item-image
+                    img
+                        width: 300px
+                        height: 200px
+    footer
+        padding-bottom: 2rem
+        .copyright
+            position: relative
+        .twitter-block
+            padding-top: 1rem  
+
+    .blog-wrapper
+        text-align: center
+        .post
+            .post-image
+                img
+                    width: 100%
+                    height: auto
+                    object-fit: fill                                                             
+
+                                                         
+                           
+    .hamburger
+        display: inline-block
+        z-index: 101
+        color: $white_color    
