@@ -6,10 +6,18 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">    
     <title>beacons</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="header">
+        <div class="box">
+                <div class="btn not-active">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
     <div class="container">
         <div class="row">
            <div class="col-md-12">
@@ -116,22 +124,75 @@
         </div>
     </div>
 </section>
-<section class="steps">
-    <img src="img/beacons.png" alt="" class="section-image">
+<section class="steps-sec">
+    <div class="section-image"><img src="img/beacons.png" alt=""></div> 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>A couple of steps to make your store popular</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-                <form action="">
-                    <input type="text" placeholder="Enter First Name" >
-                    <input type="text" placeholder="Enter Last Name" >
-                    <input type="text" placeholder="Enter Email" >
-                    <button type="submit">Next</button>
-                </form>
+                <h1>A couple of steps to make your store popular</h1>                              
+                
+                <form action="#" id="steps-form">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                
+                        <h3>Step 1</h3>
+                        <fieldset>                             
+                            <input id="userName-2" name="fName" type="text" placeholder="Enter First Name" class="required">
+                            <input id="userName-3" name="lName" type="text" placeholder="Enter Last Name" class="required">
+                            <input id="email-2" name="email" type="text" placeholder="Enter Your Email" class="required email">    
+                            
+                         
+                        </fieldset>
+                     
+                        <h3>Step 2</h3>
+                        <fieldset>
+                            <input id="address" name="address" type="text" placeholder="Enter Your Address" class="required">                            
+                        </fieldset>
+                     
+                        <h3>Step 3</h3>
+                        <fieldset> 
+                            <input id="how" name="how" type="text" placeholder="How are You?" class="required">
+                        </fieldset>                     
+                        
+                    </form>
             </div>
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="footer-img">
+        <img src="img/iphone-footer.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="support-phone text-center"><h1>SUPPORT:(844) 295-0900</h1></div>
+                <div class="support-email text-center"><h2>support@frontdeskhelpers.com</h2></div>
+                <div class="social-links text-center">
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu text-center">
+                    <ul>
+                        <li><a href="#" class="menu-link">Privacy Policy</a></li>
+                        <li><a href="#" class="menu-link">Terms of Service</a></li>
+                        <li><a href="#" class="menu-link">Terms of Sales</a></li>
+                    </ul>
+                </div>
+                <div class="copyright text-center">© 2017 FDH CLOUD</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.steps.min.js"></script>  
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
